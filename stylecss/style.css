@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.cistac {
+	clear: both;
+}
+body {
+	background-image: url('../img/pozadina.jpg');
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	font-family: "Raleway", sans-serif;
+}
+/* LOGO I NAVIGACIJA */
+#zaglavlje {
+	box-shadow: 1px 2px 2px #000;
+	width: 100%;
+	background:#252525;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+	z-index: 10;
+}
+#logo img {
+	width: 100%;
+	position: relative;
+	animation-name: logo;
+	animation-duration: 3s;
+}
+@keyframes logo {
+	0% {left: -200px;top: 0px;}
+	100% {left:0px;top:0px;}
+}
+#zaglavlje nav ul {
+	list-style-type: none;
+	margin-top: 10px;
+}
+#zaglavlje nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;
+	padding-top: 40px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#zaglavlje nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.aktivanLink {
+	border-bottom: 3px solid rgb(0, 128, 128);
+	font-weight: bold;
+}
+.aktivanLink:hover {
+	color: rgb(0, 128, 128);
+}
+/* SLAJDER */
+#slajder {
+	background-image: url('../img/slajder.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	min-height: 470px;
+}
+#levaStrana {
+	display: flex;
+	align-items: left;
+	justify-content: flex-start;
+	padding-top: 180px;
+	padding-left: 20px;
+}
+#levaStrana h1 {
+	text-align:center;
+	font-size: 36px;
+	color: #e2e2e2;
+	text-shadow: 1px 1px #000000;
+}
+/* TEKST ISPOD SLAJDERA */
+#pocetna {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	text-align:center;
+	padding-bottom: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+#prijaviSe {
+	border-radius: 10px;
+	margin: 20px 0px;
+	width: 90px;
+	padding: 15px 25px;
+	text-align: center;
+	background-color: rgb(0, 128, 128);
+	border: 2px solid #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+}
+#prijaviSe a {
+	color: #e2e2e2;
+	text-decoration: none;
+}
+#prijaviSe a:hover {
+	font-weight: bold;
+	color: #252525;
+}
+#tekst2 {
+	padding-top: 40px;
+	padding-bottom: 5px;
+}
+#tekst2 h2 {
+	color: #e2e2e2;
+}
+/* BLOK OPREMA */
+#oprema {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	text-align:center;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 30px 0px;
+	margin-bottom: 60px;
+}
+.slikaOprema {
+	width: 500px;
+	margin: 0px 30px;
+}
+.slikaOprema img {
+	width: 100%;
+	border-radius: 30px 60px;
+}
+.naslovOprema h2 {
+	color: #e2e2e2;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px 0px;
+}
+.naslovOprema p {
+	color: #e2e2e2;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* SLIKE POCETNA */
+#fotografije {
+	width: 100%;
+	min-height: 320px;
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:space-around;
+	padding: 30px 0px;
+	margin-bottom: 90px;
+}
+.slika {
+	width: 350px;
+}
+.slika img {
+	width: 100%;
+	border-radius: 10px;
+	transition: width 0.9s;
+}
+.slika img:hover {
+	width: 380px;
+}
+.slika:hover {
+	font-weight: bold;
+}
+#slike {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+figcaption {
+	font-size: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+}
+/* FOOTER */
+footer {
+	width: 100%;
+	background-color: #252525;
+}
+#kontakt {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+#kontakt h2 {
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+#lista {
+	padding: 20px 15px;
+}
+#lista ul {
+	list-style-type: none;
+}
+#lista ul li {
+	color: #e2e2e2;
+	padding: 10px 0px;
+}
+#lista span {
+	font-weight: bold;
+	color: rgb(0, 128, 128);
+	margin-right: 10px;
+}
+#lista a {
+	text-decoration: none;
+}
+#ikonice span {
+	font-size: 25px;
+	padding: 0px 15px;
+	color: rgb(255, 255, 255);
+}
+#ikonice span:hover {
+	transform: scale(1.2);
+}
+#rss {
+	font-size: 20px;
+}
+#rss span {
+	color: #ff9900;
+}
+#rss a {
+	text-decoration: none;
+}
+.sitemap {
+	color: rgb(0, 128, 128);
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.sitemap:hover {
+	color: #e2e2e2;
+}
+/* NOVA STRANA - O NAMA */
+/* NASLOV */
+#naslovOnama {
+	text-align: left;
+	margin-top: 90px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+#oNama {
+	border-radius: 5px 20px;
+	border-left: 3px solid rgb(0, 128, 128);
+	width: 25%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px 0px;
+}
+#oNama h1 {
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	text-shadow: 2px 1px #000000;
+	font-size: 30px;
+}
+/* TEKST O NAMA */
+#sredina {
+	padding: 20px 0px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-start;
+}
+#mapa {
+	padding-right: 45px;
+}
+#sredina p {
+	color: #e2e2e2;
+}
+#tekst {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#tekst p {
+	width: 650px;
+	padding: 30px 0px;
+	text-indent: 25px;
+	
+} 
+/* FORMA */
+#celaForma {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 100px;
+}
+fieldset {
+	border: 4px solid #e2e2e2;
+	border-radius: 10px 15px;
+}
+legend {
+	padding: 0px 5px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #e2e2e2;
+	font-weight: bold;
+	text-align: center;
+}
+input[type="text"] {
+	padding: 0px 5px;
+	border: 3px solid #252525;
+	width: 180px;
+	height: 23px;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+input[type="password"] {
+	padding: 0px 5px;
+	border: 3px solid #252525;
+	width: 180px;
+	height: 23px;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	font-size:15px;
+}
+input[type="email"] {
+	padding: 0px 5px;
+	border: 3px solid #252525;
+	width: 180px;
+	height: 23px;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	font-size:15px;
+}
+input[type="submit"] {
+	font-family:"Raleway", sans-serif;
+	padding: 10px 15px;
+	margin-top: 30px;
+	margin-right: 15px;
+	color: #e6e6e6;
+	border-radius: 5px 10px;
+	font-weight: bold;
+	background-color: #252525;
+}
+input[type="reset"] {
+	font-family:"Raleway", sans-serif;
+	padding: 10px 15px;
+	color: #e6e6e6;
+	border-radius: 5px 10px;
+	font-weight: bold;
+	background-color: #252525;
+}
+input[type="submit"]:hover {
+	color: #000;
+}
+input[type="reset"]:hover {
+	color: #000;
+}
+select {
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	border: 3px solid #252525;
+	border-radius: 5px;
+	height: 29px;
+	width: 196px;
+	font-size: 15px;
+}
+option {
+	font-weight: bold;
+}
+#forma {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 50px;
+}
+#tekst1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+	color: #e2e2e2;
+	padding: 40px 0px;
+}
+#prijava {
+	padding: 60px 70px;
+}
+#prijava td {
+	color: #e2e2e2;
+	font-weight: bold;
+	font-size:17px;
+}
+#prijava input {
+	border-color: #252525;
+	border-radius: 5px;
+}
+/* NOVA STRANA - CENOVNIK */
+/* NASLOV */
+#naslovCenovnik {
+	text-align: left;
+	margin-top: 90px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+#cenovnik {
+	border-radius: 5px 20px;
+	border-left: 3px solid rgb(0, 128, 128);
+	width: 25%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px 0px;
+}
+#cenovnik h1 {
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	text-shadow: 2px 1px #000000;
+	font-size: 30px;
+}
+/* TABELA CENOVNIK */
+#tabela {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#tabelaTekst {
+	text-align: center;
+}
+#tabelaCenovnik {
+	border-color: #e2e2e2;
+	color: #e6e6e6;
+	font-size: 18px;
+	background-color: rgba(0, 128, 128, 0.5);
+	border-radius: 10px;
+	margin-top: 60px;
+	width: 1000px;
+	height:350px;
+}
+#tabelaCenovnik th {
+	border: 2px solid;
+	border-radius:10px;
+}
+#tabelaCenovnik td {
+	border: 2px solid;
+	border-radius: 10px;
+}
+.zaglavljeTabele {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	color: #ffffff;
+}
+.polje {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#tekstIspodTabele {
+	width: 100%;
+	margin-bottom: 60px;
+	padding: 10px 0px;
+}
+#tekstIspodTabele p {
+	text-align: center;
+	color: #e2e2e2;
+}
+/* GALERIJA */
+#galerija {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+#naslov h2 {
+	text-align: center;
+	color: #e2e2e2;
+	text-transform: uppercase;
+	font-size: 25px;
+	text-shadow: 1px 2px #000;
+	margin-bottom: 100px;
+}
+.slikaGalerije {
+	width: 290px;
+	margin-bottom: 90px;
+	margin-right: 40px;
+}
+.slikaGalerije img {
+	width: 100%;
+	border-radius: 5px 30px;
+}
+.slikaGalerije:hover {
+	transform: scale(1.1);
+	font-weight: bold;
+}
+/* NOVA STRANA - O AUTORU */
+/* NASLOV */
+#naslovOautoru {
+	text-align: left;
+	margin-top: 90px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+#oAutoru {
+	border-radius: 5px 20px;
+	border-left: 3px solid rgb(0, 128, 128);
+	width: 25%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px 0px;
+}
+#oAutoru h1 {
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	text-shadow: 2px 1px #000000;
+	font-size: 30px;
+}
+/* TEKST O AUTORU I SLIKA */
+#autor {
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 80%;
+	border-left: 2px solid rgb(0, 128, 128);
+	border-right: 2px solid rgb(0, 128, 128);
+	border-radius: 10px 30px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+.slikaAutor {
+	padding-left: 60px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.slikaAutor img {
+	border-radius: 5px;
+	width: 270px;
+}
+.tekstAutor {
+	width: 50%;
+	margin-top: 70px;
+}
+.tekstAutor p {
+	text-indent: 30px;
+	font-size: 20px;
+	color: #e2e2e2;
+}
